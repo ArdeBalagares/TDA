@@ -9,7 +9,7 @@
  <canvas id="tempChart"></canvas>
  <canvas id="humChart"></canvas>
 <script>
-const url = "https://api.thingspeak.com/channels/#278383928/feeds.json?results=20";
+const url = "https://api.thingspeak.com/channels/3353665/feeds.json?results=20";
 fetch(url)
  .then(response => response.json())
  .then(data => {
@@ -29,17 +29,3 @@ fetch(url)
  }
  });
  new Chart(document.getElementById("humChart"), {
- type: "line",
- data: {
- labels: labels,
- datasets: [{
- label: "Humedad (%)",
- data: hums,
- borderColor: "blue"
- }]
- }
- });
- });
-</script>
-</body>
-</html
