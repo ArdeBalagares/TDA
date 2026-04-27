@@ -29,3 +29,17 @@ fetch(url)
  }
  });
  new Chart(document.getElementById("humChart"), {
+type: "line",
+ data: {
+ labels: labels,
+ datasets: [{
+ label: "Humedad (%)",
+ data: hums,
+ borderColor: "blue"
+ }]
+ }
+ });
+ });
+</script>
+</body>
+</html>
